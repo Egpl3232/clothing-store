@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            {% for image_item in product.productimage_set.all %}
+            <img src="{{ image_item.image.url }}" class="photo-page">
+            {% endfor %}
+        </div>
+        <div class="col-lg-6">
+            <h1 class="text-center">
+                {{ product.name }}
+            </h1>
+            <p class="price">
+                Цена: {{ product.price }} ₽
+            </p>
+            <p class="description">
+                {{ product.description }}
+            </p>
+            <div class="buying">
+                <form id="form_buying_product" class="form-inline" action="{% url 'basket_adding' %}">{% csrf_token %}
+                    <div class="form-group">
+                        <input type="number" class="form-control" name="number" id="number">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-buy" id="submit_btn" data-product_id="{{ product.id }}" data-product_name="{{ product.name }}" data-price="{{ product.price }}">Купить</button>
+                    </div>
+                    <!-- <button type="submit" class="custom-btn btn-11">Купить<div class="dot"></div></button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    /* последние изменения footer */
+}
+
+.conteiner {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ul {
+    list-style: none;
+} */
+
+.footer {
+    background-color: rgb(235, 235, 235);
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    /* text-transform: capitalize; */
+    margin-bottom: 30px;
+}
+
+/* подчеркивание */
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    /* color: red; */
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: red;
+    padding-left: 8px;
+}
+
+/* мобилка */
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 0 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}

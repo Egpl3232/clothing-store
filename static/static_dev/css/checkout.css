@@ -1,0 +1,24 @@
+.basket-text {
+    text-align: center;
+    padding-top: 45px;
+    font-weight: 500;
+}
+
+.price-text {
+    text-align: center;
+}
+
+.info {
+    text-align: justify;
+    font-weight: 800;
+    margin-bottom: auto;
+}
+
+.end-basket {
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+/* span .form-error {
+    list-style-type: none;
+} */

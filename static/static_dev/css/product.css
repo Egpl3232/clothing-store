@@ -1,0 +1,70 @@
+.product-item {
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgrey;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.add-to-card-btn {
+    position: absolute;
+    bottom: 13px;
+    left: 69px;
+}
+
+.price {
+    font-weight: 600;
+}
+
+img {
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+.text-new {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.discount-container {
+    position: absolute;
+    top: 20%;
+    background-color: #02ce40;
+    width: 25%;
+    color: white;
+    font-weight: 700;
+    height: 30px;
+    padding: 5px;
+
+}
+
+.text-new2 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.text-new3 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.section-delivery {
+    height: 300px;
+    background-color: red;
+    /* background-image: url("../img/apple-banner.jpg"); */
+    text-align: center;
+    padding: 130px;
+    color: white;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    /* последние изменения footer */
+}
